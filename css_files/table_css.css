@@ -1,9 +1,21 @@
-table,
-th,
-td {
+table {
     border: 1px solid white;
     border-collapse: collapse;
     border-radius: 10px;
-    background-color: lightsalmon;
     padding: 10px;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid rgb(186, 35, 35);
+    padding: 10px;
+}
+
+tr :nth-child(even) {
+    background-color: lightsalmon;
+}
+
+tr :nth-child(odd) {
+    background-color: lightgreen;
 }
