@@ -1,0 +1,88 @@
+<html>
+
+
+<body>
+
+    <h3>Please Enter your details</h3>
+
+    <form>
+
+        <label> First Name </label><br>
+        <input type="text" placeholder="First Name"><br>
+
+        <label> Last Name </label><br>
+        <input type="text" placeholder="Last Name"><br>
+
+        <p>Select Gender</p>
+
+        <input type="radio" value="Male" name="Gender">
+        <label> Male </label><br>
+        <input type="radio" value="Female" name="Gender">
+        <label> Female </label><br>
+
+        <p>Select Hobbies</p>
+
+        <input type="checkbox" value="Cycling" name="hobbie">
+        <label>Cycling</label><br>
+        <input type="checkbox" value="Gaming" name="hobbie">
+        <label>Gaming</label><br>
+        <input type="checkbox" value="Dancing" name="hobbie">
+        <label>Dancing</label><br>
+        <input type="checkbox" value="Swimming" name="hobbie">
+        <label>Swimming</label><br>
+
+        <br><label>Please Select City</label>
+        <select>
+            <optgroup label="Gujarat">
+                <option>Surat</option>
+                <option>Ahmedabad</option>
+            </optgroup>
+
+            <optgroup label="Himachal">
+                <option>Manali</option>
+                <option>Kasol</option>
+            </optgroup>
+
+        </select><br>
+
+        <br><label>Bio</label>
+        <br><textarea placeholder="please enter bio" rows="5" cols="60"></textarea><br>
+
+        <!-- <br><input type="button" name="Submit" value="Submit"> -->
+
+        <br><label>Search Employee &ensp;</label>
+        <input list="employee" placeholder="search" back><br>
+        <datalist id="employee">
+            <option>Maulik Parikh</option>
+            <option>Archna Puransingh</option>
+            <option>Kapil Sharma</option>
+            <option>Pradip Patil</option>
+            <option>Majnu Bhai</option>
+        </datalist>
+
+        <label>Please Select Color &ensp;</label>
+        <input type="color" value="#fff123"><br>
+
+        <label>Please Enter Your Birthday</label>
+        <input type="date"><br>
+
+        <label>Please Enter Your Birthday</label>
+        <input type="datetime-local"><br>
+
+        <label>Please Enter Your Email</label>
+        <input type="email"><br>
+
+        <input type="file"><br>
+
+        <input type="image" src="image/submit.png" height="100" width="100"><br>
+
+        <label>Enter password</label>
+        <input type="password"><br>
+
+        <br><br><button type="button" onclick="alert('You Clicked Me')">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
