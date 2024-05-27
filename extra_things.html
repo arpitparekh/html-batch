@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-scrolling Infinite Image Gallery</title>
+    <style>
+        /* Add some basic styling to make the header and navigation fixed */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        /* Add some basic styling to make the image gallery scrollable */
+        .image-gallery {
+            margin-top: 60px;
+            /* Add some space for the fixed header */
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        /* Add some basic styling to make the footer fixed at the bottom */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="image-gallery">
+        <img src="image/objects.png" alt="Image 1">
+        <img src="image/my_gif.gif" alt="Image 2">
+        <img src="image/man_woman.webp" alt="Image 3">
+        <img src="image/objects.png" alt="Image 1">
+        <img src="image/my_gif.gif" alt="Image 2">
+        <img src="image/man_woman.webp" alt="Image 3">
+    </div>
+    <footer>
+        <a href="https://www.example.com/important-link">Important Link</a>
+    </footer>
+</body>
+
+</html>
