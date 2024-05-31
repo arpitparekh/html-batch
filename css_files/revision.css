@@ -1,0 +1,123 @@
+.header_division{
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    width: 98%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.header_division form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+    /* put this form on the right side */
+    margin-left: auto;
+    margin-right: 10px;
+    
+}
+.header_division form input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 18px;
+    color: #333;
+    background-color: #f0f0f0;
+
+    
+}
+.header_division form button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+
+}
+
+
+header{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header_division img{
+   width: 50px;
+   height: 50px;
+}
+.header_division h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header_division a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* hover effect on anchor tag inside a division */
+.header_division a:hover{
+    color: brown;
+}
+
+
+.header_division nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+
+body{
+    margin: 0px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_div{
+    margin-left: -5px;
+    padding: 20px;
+    position: fixed;
+}
+
+.left_div nav{
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.left_div a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right_div{
+    margin-left: 140px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: lightpink;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;   
+    margin-right: 10px;
+}
+
+.right_div p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
