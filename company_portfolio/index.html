@@ -4,14 +4,18 @@
 
     <title>Company Portfoio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/index.css" />
 
 </head>
+
+<script>
+
+</script>
 
 <body>
 
     <header>
-        
+
         <div class="header-content">
             <img src="image/logo.png">
             <h1> JNK Infotech </h1>
@@ -19,9 +23,9 @@
             <div class="search-container">
                 <input type="search" placeholder="Search" class="search-bar">
                 <button class="search-button">
-                
+
                     &#128269;
-                
+
                 </button>
             </div>
 
@@ -32,11 +36,19 @@
     <div class="container">
 
         <aside class="aside left">
-            <h2> Left Aside </h2>
+            <nav>
+                <ul>
+                    <li id="home"> <a href="#">Home</a> </li>
+                    <li id="our_team"> <a href="#">Our Team</a></li>
+                    <li id="our_project"> <a href="#">Our Projects</a> </li>
+                    <li id="our_goals"> <a href="#">Our Goals</a> </li>
+                    <li id="about_us"> <a href="#">About Us</a></li>
+                </ul>
+            </nav>
         </aside>
 
-        <main>
-            <h2> Main </h2>
+        <main id="main-content">
+            
         </main>
 
         <aside class="aside right">
@@ -45,9 +57,52 @@
 
     </div>
 
-    <footer>
-        <h2> Footer </h2>
-    </footer>
+    <script>
+
+        function loadContent(url) {
+                fetch(url)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('main-content').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+
+            loadContent("home.html");
+
+
+        // Get references to the <li> elements
+        const homeLi = document.getElementById("home");
+        const teamLi = document.getElementById("our_team");
+        const projectsLi = document.getElementById("our_project");
+        const aboutLi = document.getElementById("about_us");
+        const goalLi = document.getElementById("our_goals");
+
+
+        const mainContent = document.getElementById("main-content");
+
+        // Add event listeners to the <li> elements
+        homeLi.addEventListener("click", () => {
+             loadContent("home.html");
+        });
+
+        teamLi.addEventListener("click", () => {
+             loadContent("team.html");
+        });
+
+        projectsLi.addEventListener("click", () => {
+             loadContent("project.html");
+        });
+
+        aboutLi.addEventListener("click", () => {
+             loadContent("about_us.html");
+        });
+        
+        goalLi.addEventListener("click", () => {
+                loadContent("goal.html");
+            });
+
+    </script>
 
 </body>
 

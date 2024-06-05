@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/about_us.css" />
+</head>
+
+<body>
+
+    <h2>About Us Content</h2>
+
+    <footer id="footer-content">
+
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function loadContent(url, elementId) {
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        document.getElementById(elementId).innerHTML = data;
+                    })
+                    .catch(error => console.error('Error fetching content:', error));
+            }
+
+            // Load footer content automatically on page load
+            loadContent("footer.html", "footer-content");
+        });
+    </script>
+
+</body>
+
+</html>
