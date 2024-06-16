@@ -2,10 +2,136 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
+    margin-top: 10px;
+}
+#review{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#user{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+#user:hover{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px #333;
+}
+#user-img{
+    margin: 30px;
+    border-radius: 50%;
+
+}
+
+#review-text{
+    margin: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#review-text {
+    margin: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#scroll_images {
+    width: 100%;
+    /* Set width to 100% to ensure it does not exceed parent's width */
+    max-width: 1100px;
+    /* Limit maximum width */
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent wrapping of images */
+    justify-content: center;
+    /* Center images horizontally */
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    margin-top: 20px;
+    /* Adjust margin as needed */
+}
+
+#scroll_images img {
+    height: 200px;
+    width: 200px;
+    width: auto;
+    /* Maintain aspect ratio */
+    margin: 0 10px;
+
+    flex-shrink: 0;
+    /* Prevent images from shrinking */
+    border-radius: 10px;
+    /* Optional: add border radius */
+}
+
+@media(max-width:768px) {
+
+    #review {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: auto;
+        }
+}
+
+#div1 img{
+    height: 50px;
+    width: 50px;
+}
+
+#div1{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#div1 li{
+    display: inline-block;
+    list-style: none;
+}
+
+#div2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+#div2 h4{
+    margin-bottom: 20px;
+}
+
+#div2 li{
+
+    list-style: none;
 }
