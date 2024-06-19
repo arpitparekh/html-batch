@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+
+#first{
+    background-color: brown;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    transition: width 2s,height 2s;
+    transition-timing-function: ease-out;
+    transition-delay:  2s;
+}
+
+#first:hover{
+    width: 500px;
+    height: 500px;
+}
+
+#first h3{
+    text-align: center;
+    color: lightsalmon;
+}
+
+#second{
+    background-color: brown;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    transition: transform 0.5s;
+    transform: rotateY(0deg);
+}
+
+#second:hover{
+    transform: rotateY(180deg);
+}
+
+#second h3 {
+    text-align: center;
+    color: lightsalmon;
+}
