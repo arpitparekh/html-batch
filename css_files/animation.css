@@ -1,8 +1,8 @@
-h1{
+h1 {
     text-align: center;
 }
 
-#first{
+#first {
     background-color: brown;
     display: inline-block;
     padding: 20px;
@@ -10,22 +10,22 @@ h1{
     width: 150px;
     height: 150px;
     align-items: center;
-    transition: width 2s,height 2s;
+    transition: width 2s, height 2s;
     transition-timing-function: ease-out;
-    transition-delay:  2s;
+    transition-delay: 2s;
 }
 
-#first:hover{
+#first:hover {
     width: 500px;
     height: 500px;
 }
 
-#first h3{
+#first h3 {
     text-align: center;
     color: lightsalmon;
 }
 
-#second{
+#second {
     background-color: brown;
     display: inline-block;
     padding: 20px;
@@ -37,11 +37,254 @@ h1{
     transform: rotateY(0deg);
 }
 
-#second:hover{
+#second:hover {
     transform: rotateY(180deg);
 }
 
 #second h3 {
     text-align: center;
     color: lightsalmon;
+}
+
+#third {
+    background-color: lightslategray;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    animation-name: rollingball;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: black;
+
+}
+
+#third h3 {
+    animation: textAnimation;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+    from {
+        background-color: darkblue;
+        color: aliceblue;
+    }
+
+    to {
+        background-color: lightslategray;
+        color: black;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: darkblue;
+        color: aliceblue;
+    }
+
+    25% {
+        background-color: brown;
+        color: lightcoral;
+    }
+
+    75% {
+        background-color: darkgreen;
+        color: lightgreen;
+    }
+
+    100% {
+        background-color: lightslategray;
+        color: black;
+    }
+}
+
+@keyframes rollingball {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(100px);
+    }
+
+    20% {
+        transform: translateX(200px);
+    }
+
+    30% {
+        transform: translateX(300px);
+    }
+
+    40% {
+        transform: translateX(400px);
+    }
+
+    50% {
+        transform: translateX(500px);
+    }
+
+    60% {
+        transform: translateX(600px);
+    }
+
+    70% {
+        transform: translateX(700px);
+    }
+
+    80% {
+        transform: translateX(800px);
+    }
+
+    90% {
+        transform: translateX(900px);
+    }
+
+    100% {
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(18deg);
+    }
+
+    20% {
+        transform: rotate(36deg);
+    }
+
+    30% {
+        transform: rotate(54deg);
+    }
+
+    40% {
+        transform: rotate(72deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    60% {
+        transform: rotate(108deg);
+    }
+
+    70% {
+        transform: rotate(126deg);
+    }
+
+    80% {
+        transform: rotate(144deg);
+    }
+
+    90% {
+        transform: rotate(162deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+#loading_main {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#load1 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: lightsalmon;
+    border-radius: 50%;
+    animation-name: bigSmall;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#load2 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: lightsalmon;
+    border-radius: 50%;
+    animation-name: bigSmall;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.25s;
+}
+
+#load3 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: lightsalmon;
+    border-radius: 50%;
+    animation-name: bigSmall;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.5s;  
+
+}
+
+#load4 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: lightsalmon;
+    border-radius: 50%;
+    animation-name: bigSmall;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.75s;
+
+
+}
+#load5 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: lightsalmon;
+    border-radius: 50%;
+    animation-name: bigSmall;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+
+}
+
+@keyframes bigSmall {
+    from {
+        transform: scale(1);
+        background-color: red;
+    }
+
+    to {
+        transform: scale(1.2);
+        background-color: darkorange;
+    }
 }
