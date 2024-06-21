@@ -64,11 +64,12 @@ h1 {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     color: black;
+    
 
 }
 
 #third h3 {
-    animation: textAnimation;
+        animation: textAnimation;
     animation-duration: 3s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
