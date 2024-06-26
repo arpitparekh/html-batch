@@ -180,3 +180,92 @@ button {
         color: inherit;
     }
 }
+
+#container{
+    background-color: lightsalmon;
+    height: 50px;
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    right: 200px;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: height 1s;
+}
+
+#container:hover{
+    height: 230px;
+}
+
+#container p{
+    text-align: center;
+    color: #111315;
+    margin-top: 10px;
+    
+}
+
+#container img{
+    height: 170px;
+    width: 200px;
+    margin-top: 20px;
+}
+#container1 {
+    background-color: lightslategray;
+    height: 50px;
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    right: 250px;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: height 1s;
+}
+
+#container1:hover {
+    height: 230px;
+}
+
+#container1 p {
+    text-align: center;
+    color: #111315;
+    margin-top: 10px;
+
+}
+
+#container1 img {
+    height: 170px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#container2 {
+    background-color: lightseagreen;
+    height: 50px;
+    width: 200px;
+    position: fixed;
+    bottom: 0px;
+    right: 300px;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: height 1s;
+}
+
+#container2:hover {
+    height: 230px;
+}
+
+#container2 p {
+    text-align: center;
+    color: #111315;
+    margin-top: 10px;
+
+}
+
+#container2 img {
+    height: 170px;
+    width: 200px;
+    margin-top: 20px;
+}
